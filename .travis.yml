@@ -4,6 +4,6 @@ services:
 
 before_install:
   -docker build -t abose2019/docker-react -f Dockerfile.dev .
-	
+
 script:
   -docker run -e CI=true abose2019/docker-react npm run test
